@@ -27,10 +27,12 @@ body {
     display: inline;
     font-family: 'Gill Sans';
     font-size: 50px;
-    margin: 5rem ;
+    margin: auto;
     text-align: center;
     color: white;
-}
+    margin-left: 10px;
+    margin-right: 10px;    
+ }
 
 
 
@@ -38,12 +40,12 @@ body {
      border: solid 10px white; 
      background-color: #8FBC8B;
      border-radius: 25px;
-     width: 400px;
-     height: 800px;
+     width: calc((100% / 4) - 1rem);
+     height: 900px;
      font-size: 50px;
      display: inline-block;
-     margin-top: 10px;
-    
+     margin-top: 25px;
+     margin-bottom: 25px;
      
 }
 
@@ -67,14 +69,71 @@ body {
 
 }
 
+.monstera div {
+    background-image: url(monstera.jpg);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    background-position: -20px -50px;
+    border: solid 5px white;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.peper div {
+    background-image: url(peperomia.jpg);
+    background-size: 220px;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    background-position: -20px -15px;
+    border: solid 5px white;
+    border-radius: 25px;
+    margin: auto; 
+}
+
+
+.snake div {
+    background-image: url(pinksnakeplant.jpg);
+    background-size: 193px;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    background-position: 1px 0px;
+    border: solid 5px white;
+    border-radius: 25px;
+    margin: auto;
+}
+
 .pothos div > span {
     font-size: 10px;
     position: absolute;
     padding-top: 10px;
     padding-left: 12px;
     
+}
+
+.monstera div > span {
+    font-size: 10px;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 6px;
+}
 
 
+.peper div > span {
+    font-size: 15px;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.snake div > span {
+    font-size: 11px;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 32px;
 }
 
 h5 > p {
@@ -87,24 +146,75 @@ h5 > p {
     margin-top: -5px;
 }
 
-#stores {
-    border: solid 2px white;
-    margin-top: 10px;
+.monstera > p {
+    padding: 20px;
+    margin-top: -5px;
 }
 
-#stores h3 {
+.peper > p {
+    padding: 20px;
+    margin-top: -5px;
+}
+
+.snake > p {
+    padding: 20px;
+    margin-top: -5px;
+}
+
+#stores {
+    border: solid 10px white;
+    margin-top: 10px;
+    height: 800px;
+    border-radius: 45px;
+    color: #00674b;
+    background-image: url(waterco.jpeg);
+    background-size: contain;
+    
+}
+
+.place {
     margin-right: 75%;
     color: #00674b;
 }
+
+
+#stores > div {
+    display: inline;
+}
+
+
+
+
+#location {
+   font-size: 50px; 
+   font-family: 'Gill Sans';
+   color: #00674b;
+
+}
+
+
+
+#storelist > div > div {
+    font-family: 'Gill Sans';
+    border: solid 20px white;
+    font-size: 30px;
+    border-radius: 40px;
+    background-color: white;
+    float: left;
+    margin: 30px;
+    width: calc((100% / 5) - 1rem);
+    padding: 20px;
+}
+
 
 </style>
     <body>
         <div class= 'header'>
         <h1>Indoor House Plants</h1>
           <h3>Beginner-Friendly</h3>
+       </div>
 
-        </div>
-       <div id='plants'>=
+       <div id='plants'>
 
         <div class='pothos'>
             <h5>Pothos <br>
@@ -116,36 +226,99 @@ h5 > p {
         </div>
 
         <div class= 'monstera'>
-            <h5>Monstera</h5>
+            <h5>Monstera <br>
+                <p>Monstera Deliciosa</p>
+            </h5>
+            <div>
+            <span> Monstera Deliciosa</span>    
+            </div>
             <p>
               Monstera Deliciosa requires a medium amount of sunlight.
             </p>
         </div>
 
         <div class= 'peper'>
-            <h5>Peperomia</h5>
+            <h5>Peperomia <br>
+                <p>
+                    Peperomia Obtusifolia
+                </p>
+
+            </h5>
+            <div><span>Peperomia</span></div>
             <p>
-                plant info
+                Peperomia requires a medium amount of sunlight.
             </p>
 
         </div>
 
         <div class= 'snake'>
-            <h5>Snake Plant</h5>
+            <h5>Snake Plant<br>
+                <p>Dracaena Trifasciata</p>
+            </h5>
+            <div><span>Snake Plant</span></div>
             <p>
-                plant info
+               A snake plant requires a medium amount of sunlight.
             </p>
 
         </div>
 
+   </div>
 
-        <div id= 'stores'>
-          <h3> Places to Buy Plants in NYC</h3>
 
-            
+   <div id= 'stores'>
+      <div id='location'>
+          <h4 style= "padding-left: 35px; border: solid 5px white; border-radius: 40px ; ">Places to Buy Plants in NYC</h4>
+        </div>   
+       <div id= 'storelist'> 
+           
+               <div class='dahing'>
+                  <div>Dahing Plants <br>
+                    &nbsp; <br>
+                    289 Grand St, <br>
+                    New York, NY 10002 <br>
+                    8:30am–6:30pm
+                </div> 
+                  
+                </div>
+               
+
+               <div class= 'sill'>
+                   <div>The Sill <br>
+                    &nbsp; <br>
+                    Upper West Side <br>
+                    448 Amsterdam Avenue <br>
+                    12pm–7pm <br> 
+                    &nbsp; <br>
+
+                    Lower East Side <br>
+                    84 Hester Street <br>
+                    12pm–7pm <br>
+                   </div>
+                </div>
+
+               <div class= 'jungle'>
+                   <div>Jungle NYC <br> 
+                    &nbsp; <br>
+                    145 Wythe Ave <br>
+                    Brooklyn, NY 11249 <br>
+                    12pm-7pm
+
+                   </div>
+                </div>
+
+               <div class= 'kinka'>
+                   <div>KINKA <br> 
+                    &nbsp; <br> 
+                    55 W 19th St <br> 
+                    New York, NY 10011 <br> 
+                    12pm-9pm 
+
+                   </div>
+                </div>
+           
         </div>
 
-      </div>
+   </div>
 
         
           
